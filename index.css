@@ -1,0 +1,330 @@
+/*---Colors: 
+Background: #0392BF 
+Pink: #ED48BA 
+Yellow: #FBEC06 
+Grey: #B3D4E0
+----*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #0392BF;
+    height: 100vh;
+    width: 100%;
+    font-family: roboto;
+}
+
+.container{
+    background: #b4e3f1;
+    width: 90px;
+    height: 100vh;
+    padding-left: 30px;
+    position: relative;
+    padding-top: 20px;
+}
+
+.icons{
+    position: absolute;
+    bottom: 30px;
+}
+
+.icon{
+    list-style: none;
+    color:  #0392BF;
+    margin: 20px 0;
+}
+nav{
+    position: relative;
+}
+.navi{
+    position: absolute;
+    bottom: 620px;
+}
+.nav{
+    display: inline-block;
+    padding-left: 40px;
+    
+}
+.nav:first-child{
+    padding-left: 90px;
+    margin-left: 80px; 
+}
+
+.nav:last-child{
+    position: absolute;
+    right: -43rem;
+    color:#B3D4E0 ;
+}
+.nav a:link,
+.nav a:visited{
+    color: #B3D4E0;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.nav a:active,
+.nav a:hover{
+    background: #b4e3f1;
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: #ED48BA;
+}
+
+.description{
+    position: relative;
+}
+
+.skate-img{
+    height: 50rem;
+    width: 50%;
+    position: absolute;
+    bottom: 2px;
+    left: 1rem;
+}
+h1{
+    position: absolute;
+    bottom: 11rem;
+    left: 14rem;
+    color:  #B3D4E0;
+    font-size: 50px;
+    letter-spacing: 7%;
+}
+.quad{
+    position: absolute;
+    left: 6rem;
+}
+.info{
+    position: absolute;
+    top: -540px;
+    margin: auto;
+    left: 750px;
+    padding-right: 30px;
+    line-height: 1.5;
+    letter-spacing: 3%;
+    word-spacing: 3;
+    color: #B3D4E0;
+}
+.star{
+    color:#FBEC06 ;
+}
+h2{
+    text-transform: uppercase;
+    font-weight: 400;
+
+}
+p{
+    font-weight: 300;
+}
+.price{
+    margin: 15px 0;
+    font-weight: 700;
+}
+
+.colors{
+    margin: 30px 0;
+}
+.circle {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 15px;
+ }
+ 
+.yellow{
+    background-color: #FBEC06;
+}
+.pink{
+    background-color: #ED48BA;
+}
+.blue{
+    background-color: #0392BF;
+    border: 2px solid #B3D4E0;
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+}
+.grey{
+    background-color: #B3D4E0;
+}
+
+#choose{
+    background-color: transparent;
+    border: 1px solid #B3D4E0;
+    width: 120px;
+    height: 30px;
+    margin-left: 20px;
+    color: #B3D4E0;
+    cursor: pointer;
+}
+
+button{
+    background-color: #ED48BA;
+    width: 150px;
+    height: 40px;
+    margin-top: 30px;
+    border: 1px solid #ED48BA;
+    margin-left: 70px;
+    color: #B3D4E0;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/*---Media queries----*/
+ 
+/*big tab-1300px*/
+
+@media only screen and (max-width: 1200px){}
+    
+
+/*small tablets to big tab 767px-1023px*/
+
+@media only screen and (max-width: 1023px){
+    .nav:last-child{
+        right: -23rem;
+    }
+    .info{
+        top: -500px;
+        left: 500px;
+}
+    .skate-img{
+        width: 45%;
+}
+    h1{
+        bottom: 12rem;
+        left: 10.5rem;
+        font-size: 35px;
+}
+}
+
+/*small phones to small tablets 481px-767px*/
+
+@media only screen and (max-width: 767px){
+    .container{
+        background: #0392BF;
+    }
+    .icon{
+        display: block;
+        color: #B3D4E0;
+    }
+    .nav:last-child{
+        display: none;
+    }
+    .skate-img{
+        width: 75%;
+       margin-top: 30px;
+       bottom: 70px;
+        left: 2rem;
+}
+.info{
+    padding-top: 40%;
+    width: 100%;
+    left: 150px;
+    padding-bottom: 10px;
+}
+h1{
+    bottom: 25rem;
+    left: 25rem;
+    font-size: 35px;
+}
+}
+
+@media only screen and (max-width: 500px){
+  
+    .navi{
+        opacity: 0;
+    }
+    .container{
+        opacity: 0;
+    }
+
+}
+@media only screen and (max-width: 580px){
+    .navi{
+        left: -3rem;
+    }
+    .info{
+        width: 100%;
+        left: 3rem;
+    }
+    .container{
+        opacity: 0;
+    }
+    .logo{
+        opacity: 1;
+    }
+    h1{
+        left: 20rem;
+    }
+}
+
+/*small phones from 0-480px*/
+
+@media only screen and (max-width: 480px){
+    .icons{
+        display: none;
+    }
+    .container{
+        opacity: 0;
+    }
+    .skate-img{
+        left:-5rem;
+        width: 100%;
+        bottom: 90px;
+    }
+    h1{
+        left: 15rem;
+        font-size: 30px;
+    }
+    .info{
+        width: 100%;
+        left: 2rem;
+        padding-top: 50%;
+    }
+    .star{
+        font-size: 20px;
+    }
+
+    .navi{
+     display: none;
+    }    
+}
+
+@media only screen and (max-width: 375px){
+    h1{
+        left: 10rem;
+        font-size: 30px;
+    }
+    .info{
+        width: 100%;
+        padding-top: 70%;
+        word-spacing: 1;
+    }
+    .star{
+        margin-left: 20px;
+    }
+    .container{
+        opacity: 0;
+    }
+}
+@media only screen and (width: 411px){
+    h1{
+        left: 12rem;
+    }
+    .star{
+       font-size: 12px;
+       color: black;
+    }
+    h2{
+        font-size: 19px;
+    }
+    .container{
+        opacity: 0;
+    }
+}
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+        <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo">
+                <img src="../../Frontend challenge/faq/favicon-32x32.png" alt="Logo" class="logo">
+            </div>
+            <div class="socials-icon">
+                <ul class="icons">
+                    <li class="icon"><ion-icon name="logo-facebook"></ion-icon></li>
+                    <li class="icon"><ion-icon name="logo-instagram"></ion-icon></li>
+                    <li class="icon"><ion-icon name="logo-twitter"></ion-icon></li>
+                </ul>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="navi">
+                <li class="nav"><a href="#" active>Home</a></li>
+                <li class="nav"><a href="#">Services</a></li>
+                <li class="nav"><a href="#">About</a></li>
+                <li class="nav"><a href="#">Testimonies</a></li>
+                <li class="nav"><a href="#">Contact</a></li>
+                <li class="nav"><ion-icon name="cart-outline"></ion-icon></li>
+            </ul>
+        </nav>
+
+        <div class="description">
+            <div class="skates">
+                <img src="skate.png" alt="skate" class="skate-img">
+                <h1>SPEEDY <br> <span class="quad">QUAD</span></h1>
+            </div>
+
+            <div class="info">
+                <div class="header">
+                    <h2>Awesome Speedy Quads <ion-icon name="star-outline" class="star"></ion-icon><ion-icon name="star-outline"  class="star"></ion-icon>
+                        <ion-icon name="star-outline"  class="star"></ion-icon><ion-icon name="star-outline"  class="star"></ion-icon>
+                        <ion-icon name="star-outline"  class="star"></ion-icon>
+                    </h2>
+                    <p class="price">
+                       3500 Pyo 
+                    </p>
+                </div>
+                <div class="infos">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua. 
+                        <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco <br> laboris nisi ut aliquip ex ea commodo consequat.
+                        <br> Duis aute irure dolor in reprehenderit in voluptate velit esse <br> cillum dolore eu fugiat nulla pariatur.
+                        <br> Excepteur sint occaecat cupidatat non proident, <br> sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                    </p>
+                </div>
+
+                <div class="colors">
+                    <h4>Colors: 
+                      <a href="#" active class="color-link" onclick="changeBg('#0392BF')"><div class="circle blue" id="blue"></div></a>
+                       <a href="#" class="color-link" onclick="changeBg('#ED48BA')"><div class="circle pink" id="pink"></div></a>
+                      <a href="#" class="color-link" onclick="changeBg('#FBEC06')"><div class="circle yellow" id="yellow"></div></a> 
+                       <a href="#" class="color-link" onclick="changeBg('#B3D4E0')"><div class="circle grey" id="grey"></div></a>
+                    </h4>
+                </div>
+
+                <div class="select">
+                    <label for="color">Choose a color: </label>
+                    <select name="colors" id="choose">
+                        <option value="0" id="blue">Blue</option>
+                        <option value="1" id="pink">Pink</option>
+                        <option value="2" id="yellow">Yellow</option>
+                        <option value="3" id="grey">Grey</option>
+                        <option value="4" selected>None</option>
+                    </select>
+                </div>
+
+                <div class="btn">
+                    <button id="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+      
+       
+    </body>
+</html>
