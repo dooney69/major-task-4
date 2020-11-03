@@ -57,11 +57,11 @@ nav{
 .nav:last-child{
     position: absolute;
     right: -43rem;
-    color:#B3D4E0 ;
+    color:inherit ;
 }
 .nav a:link,
 .nav a:visited{
-    color: #B3D4E0;
+    color:inherit;
     text-decoration: none;
     cursor: pointer;
     font-size: 15px;
@@ -90,7 +90,7 @@ h1{
     position: absolute;
     bottom: 11rem;
     left: 14rem;
-    color:  #B3D4E0;
+    color:  inherit;
     font-size: 50px;
     letter-spacing: 7%;
 }
@@ -107,7 +107,7 @@ h1{
     line-height: 1.5;
     letter-spacing: 3%;
     word-spacing: 3;
-    color: #B3D4E0;
+    color: inherit;
 }
 .star{
     color:#FBEC06 ;
@@ -138,28 +138,31 @@ p{
  
 .yellow{
     background-color: #FBEC06;
+    border: 1px solid black;
 }
 .pink{
     background-color: #ED48BA;
+    border: 1px solid black;
 }
 .blue{
     background-color: #0392BF;
-    border: 2px solid #B3D4E0;
+    border: 1px solid black;
     height: 30px;
     width: 30px;
     margin-left: 20px;
 }
 .grey{
     background-color: #B3D4E0;
+    border: 1px solid black;
 }
 
 #choose{
     background-color: transparent;
-    border: 1px solid #B3D4E0;
+    border: 1px solid inherit;
     width: 120px;
     height: 30px;
     margin-left: 20px;
-    color: #B3D4E0;
+    color: inherit;
     cursor: pointer;
 }
 
@@ -170,7 +173,7 @@ button{
     margin-top: 30px;
     border: 1px solid #ED48BA;
     margin-left: 70px;
-    color: #B3D4E0;
+    color: inherit;
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
@@ -199,6 +202,9 @@ button{
         bottom: 12rem;
         left: 10.5rem;
         font-size: 35px;
+}
+body{
+    color: #222222 ;
 }
 }
 
@@ -233,17 +239,13 @@ h1{
     font-size: 35px;
 }
 }
-
-@media only screen and (max-width: 500px){
-  
-    .navi{
-        opacity: 0;
-    }
-    .container{
-        opacity: 0;
-    }
-
+@media only screen and (max-width: 720px){
+  h1{
+      left: 23rem;
+  }
 }
+
+
 @media only screen and (max-width: 580px){
     .navi{
         left: -3rem;
@@ -261,6 +263,16 @@ h1{
     h1{
         left: 20rem;
     }
+}
+@media only screen and (max-width: 500px){
+  
+    .navi{
+        opacity: 0;
+    }
+    .container{
+        opacity: 0;
+    }
+
 }
 
 /*small phones from 0-480px*/
@@ -294,6 +306,21 @@ h1{
      display: none;
     }    
 }
+@media only screen and (width: 411px){
+    h1{
+        left: 12rem;
+    }
+    .star{
+       font-size: 12px;
+       color: black;
+    }
+    h2{
+        font-size: 19px;
+    }
+    .container{
+        opacity: 0;
+    }
+}
 
 @media only screen and (max-width: 375px){
     h1{
@@ -312,19 +339,5 @@ h1{
         opacity: 0;
     }
 }
-@media only screen and (width: 411px){
-    h1{
-        left: 12rem;
-    }
-    .star{
-       font-size: 12px;
-       color: black;
-    }
-    h2{
-        font-size: 19px;
-    }
-    .container{
-        opacity: 0;
-    }
-}
+
 
